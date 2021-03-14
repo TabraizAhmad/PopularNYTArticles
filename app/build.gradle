@@ -19,6 +19,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -48,6 +52,12 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
 
+
+    // Room components
+    implementation "androidx.room:room-runtime:2.2.6"
+    kapt "androidx.room:room-compiler:2.2.6"
+    implementation "androidx.room:room-ktx:2.2.6"
+
     //Retrofit coroutine adapter
     def version_retrofit_coroutines_adapter = "0.9.2"
     implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
@@ -73,7 +83,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
 
 
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
