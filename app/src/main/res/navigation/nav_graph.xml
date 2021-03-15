@@ -18,5 +18,11 @@
         android:id="@+id/articleDetailFragment"
         android:name="com.example.popularnyarticles.ui.article.articledetail.ArticleDetailFragment"
         android:label="fragment_article_detail"
-        tools:layout="@layout/fragment_article_detail" />
+        tools:layout="@layout/fragment_article_detail" >
+        <argument
+            android:name="Article"
+            app:argType="com.example.popularnyarticles.network.model.PopularArticle"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 </navigation>

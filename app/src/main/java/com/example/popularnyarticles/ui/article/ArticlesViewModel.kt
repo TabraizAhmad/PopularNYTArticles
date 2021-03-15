@@ -16,6 +16,7 @@ class ArticlesViewModel @Inject constructor(
     private val repository: ArticleRepository
 ) : ViewModel() {
 
+
     fun getPopularArticles(section: String, period: Int,isAvailable:Boolean): LiveData<Resource<PopularArticleListResponse>> {
         return liveData(context = viewModelScope.coroutineContext + Dispatchers.IO) {
             emit(Resource.Loading())
