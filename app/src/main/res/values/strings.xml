@@ -3,6 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="article_image">Article Image</string>
-    <string name="published_date">Published Date: </string>
-    <string name="updateed_date">Updated date :</string>
+    <string name="published_date">Published Date: %1$s</string>
+
+    <string name="updated_date">Updated date :%1$s</string>
 </resources>
