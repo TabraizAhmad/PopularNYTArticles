@@ -14,6 +14,7 @@ fun View.makeGone() {
 fun View.makeInvisible() {
     visibility = View.INVISIBLE
 }
+
 fun PopularArticle.getPhotoUrl():String{
     for(mediaItem in this.media){
         if(mediaItem.type == "image"){

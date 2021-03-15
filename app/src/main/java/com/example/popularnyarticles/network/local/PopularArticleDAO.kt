@@ -16,6 +16,6 @@ interface PopularArticleDAO {
 
 
 
-    @Query("SELECT * FROM " + POPULAR_ARTICLE_TABLE_NAME)
+    @Query("SELECT * FROM $POPULAR_ARTICLE_TABLE_NAME")
     fun getAllPopularNews(): List<PopularArticle>
 }

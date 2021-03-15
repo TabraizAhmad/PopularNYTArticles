@@ -16,7 +16,7 @@ class ArticlesViewModel @Inject constructor(
     private val repository: ArticleRepository
 ) : ViewModel() {
 
-     var articleResponse: Resource<PopularArticleListResponse>? = null
+     private var articleResponse: Resource<PopularArticleListResponse>? = null
 
 
     fun getPopularArticles(section: String, period: Int,isAvailable:Boolean): LiveData<Resource<PopularArticleListResponse>> {
