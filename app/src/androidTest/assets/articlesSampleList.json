@@ -1,0 +1,38 @@
+{
+    "status": "OK",
+    "copyright": "Copyright, Sample",
+    "num_results": 1,
+    "results": [
+        {
+            "uri": "nyt://article/ac02e08f-7516-5e98-80e8-7a9893909fdf",
+            "url": "https://www.nytimes.com/2021/03/07/world/europe/oprah-interview-harry-meghan.html",
+            "id": 1,
+            "published_date": "2021-03-15",
+            "updated": "2021-03-09 17:50:43",
+            "section": "World",
+            "subsection": "Europe",
+            "nytdsection": "world",
+            "byline": "By Tabraiz",
+            "type": "Article",
+            "title": "Sample testing",
+            "abstract": "Sample testing",
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Oprah Winfrey’s highly anticipated two-hour interview with Prince Harry and his wife, Meghan, aired on CBS Sunday night.",
+                    "copyright": "Joe Pugliese/Harpo Productions, via Getty Images",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/03/07/world/07royals-1/07royals-1-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -4,4 +4,7 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class MyApp : Application()
+open class MyApp : Application(){
+    open fun getBaseUrl() = "https://api.nytimes.com/svc/"
+
+}
