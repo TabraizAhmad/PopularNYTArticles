@@ -13,7 +13,7 @@ import com.example.popularnyarticles.network.model.PopularArticle
 
 class ArticleRVAdapter(private var articleList:List<PopularArticle>,
                        private val context:Context?,
-                       private  val itemClickListener: OnItemClicked
+                       private  val itemClickListener: OnItemClicked?
 ):
     RecyclerView.Adapter<ArticleRVAdapter.ArticleViewHolder>() {
 
@@ -25,9 +25,9 @@ class ArticleRVAdapter(private var articleList:List<PopularArticle>,
     class ArticleViewHolder(private val viewBinding: ArticleItemBinding) : RecyclerView.ViewHolder(viewBinding.root) {
 
 
-        fun bindClickListener(article: PopularArticle, itemClickListener: OnItemClicked) {
+        fun bindClickListener(article: PopularArticle, itemClickListener: OnItemClicked?) {
             viewBinding.root.setOnClickListener {
-                itemClickListener.onItemClicked(it, article)
+                itemClickListener?.onItemClicked(it, article)
             }
         }
 
