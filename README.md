@@ -20,7 +20,7 @@ Here's a walkthrough of implemented user stories:
 ## Top Level Design
 Here's a top-level design of system:
 
-(assets/system_design.jpg)
+![Video Walkthrough](assets/system_design.jpg)
 
 
 
