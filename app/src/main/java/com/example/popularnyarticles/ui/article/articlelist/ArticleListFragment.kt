@@ -19,6 +19,7 @@ import com.example.popularnyarticles.ui.article.articlelist.adapter.ArticleRVAda
 import com.example.popularnyarticles.utils.ConnectivityLiveData
 import com.example.popularnyarticles.utils.Constants
 import com.example.popularnyarticles.utils.Constants.SECTION
+import com.example.popularnyarticles.utils.EspressoIdlingResource
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 import javax.inject.Inject
@@ -54,6 +55,7 @@ class ArticleListFragment : Fragment(), ArticleRVAdapter.OnItemClicked {
 
     private fun fetchPopularArticles(){
         connectivityLiveData.observe(viewLifecycleOwner, { isAvailable->
+            EspressoIdlingResource.increment()
 
             viewModel.getPopularArticles(SECTION,
                 Constants.PeriodFilter.SHOW_WEEKLY.value,
@@ -65,6 +67,7 @@ class ArticleListFragment : Fragment(), ArticleRVAdapter.OnItemClicked {
                         binding.errorTextView.makeVisible()
                         binding.progressBar.makeGone()
                         binding.errorTextView.text = resource.exception.message
+                        EspressoIdlingResource.decrement()
                     }
                     is Resource.Success -> {
                             binding.popularListRV.makeVisible()
@@ -72,6 +75,7 @@ class ArticleListFragment : Fragment(), ArticleRVAdapter.OnItemClicked {
                             binding.progressBar.makeGone()
                             articles = resource.data?.results as ArrayList<PopularArticle>
                         articleRVAdapter.setArticles(articles)
+                        EspressoIdlingResource.decrement()
 
                     }
                     is Resource.Loading ->{

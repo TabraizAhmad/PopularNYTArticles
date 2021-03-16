@@ -18,20 +18,12 @@ data class PopularArticle(
 
     @SerializedName("abstract")
     val articleAbstract:String,
-    val adx_keywords: String,
-    val asset_id: Long,
     val byline: String,
     @PrimaryKey
     val id: Long,
     val media: List<Media>,
-    val nytdsection: String,
     val published_date: String,
-    val section: String,
-    val source: String,
-    val subsection: String,
     val title: String,
     val type: String,
-    val updated: String,
-    val uri: String,
-    val url: String
+    val updated: String
 ):Parcelable

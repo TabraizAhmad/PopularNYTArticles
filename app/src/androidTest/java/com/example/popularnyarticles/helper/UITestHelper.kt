@@ -28,7 +28,7 @@ class UITestHelper {
             server?.enqueue(mockResponse)
         }
 
-         fun loadJSONFromAsset(context: Context, fileName: String): String? {
+        private fun loadJSONFromAsset(context: Context, fileName: String): String? {
             val json: String
             json = try {
                 val `is` = context.resources.assets.open(fileName)
