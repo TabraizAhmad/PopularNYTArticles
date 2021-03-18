@@ -15,7 +15,7 @@ Here's a walkthrough of implemented user stories:
 - [Retrofit 2](https://square.github.io/retrofit/) - HTTP client
 - [OkHttp 3](http://square.github.io/okhttp/) - HTTP & HTTP/2 client for Android (used in conjunction with Retrofit)
 - [Dagger Hilt](https://dagger.dev/hilt/) -  For dependency injection into the application.
--[Androidx](https://developer.android.com/jetpack/androidx) - Coroutines, ViewModel and Navigation component and Room for storing data to local SQLiteDB
+- [Androidx](https://developer.android.com/jetpack/androidx) - Coroutines, ViewModel and Navigation component and Room for storing data to local SQLiteDB
 
 ## Top Level Design
 Here's a top-level design of system:

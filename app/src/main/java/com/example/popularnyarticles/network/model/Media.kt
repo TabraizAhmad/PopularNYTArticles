@@ -8,6 +8,5 @@ import kotlinx.parcelize.Parcelize
 data class Media(
     @SerializedName("media-metadata")
     val mediaMetadata: List<MediaMetadata>,
-    val subtype: String,
     val type: String
 ):Parcelable

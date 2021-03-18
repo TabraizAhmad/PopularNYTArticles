@@ -12,7 +12,7 @@ import com.example.popularnyarticles.network.model.PopularArticle
 interface PopularArticleDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertall(userEntity: List<PopularArticle>)
+    fun insertall(articleEntities: List<PopularArticle>)
 
 
 

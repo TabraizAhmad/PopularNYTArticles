@@ -24,6 +24,5 @@ data class PopularArticle(
     val media: List<Media>,
     val published_date: String,
     val title: String,
-    val type: String,
     val updated: String
 ):Parcelable
